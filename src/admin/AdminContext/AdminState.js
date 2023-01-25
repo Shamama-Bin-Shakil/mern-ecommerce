@@ -5,7 +5,7 @@ const AdminState = (props) => {
 
     // Get Products
     const getData = async () => {
-        const URL = "http://localhost:8000/api/products/get";
+        const URL = `${process.env.REACT_APP_HOST}/api/products/get`;
         const response = await fetch(URL,{
         method: 'GET',
         }) 
