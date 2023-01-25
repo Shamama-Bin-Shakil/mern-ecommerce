@@ -44,7 +44,8 @@ const Top = () => {
     formData.append("description", form.description);
     formData.append("file", img);
 
-    const url = "http://localhost:8000/api/products/create";
+    const url = `${process.env.REACT_APP_HOST}/backend/api/products/create`;
+    
     const response = await fetch(url, {
       method: "post",
       body: formData,

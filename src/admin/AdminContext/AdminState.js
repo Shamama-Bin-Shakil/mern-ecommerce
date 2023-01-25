@@ -11,6 +11,7 @@ const AdminState = (props) => {
         }) 
         const result = await response.json();
         setProduct(result.data);
+        console.log(result);
     }
 
   return (
